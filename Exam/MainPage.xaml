@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="Exam.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Exam"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+            <Button x:Name="Read_File" Content="ReadFile" Click="Read_File_Click" Width="200" Height="100" Margin="200"/>
+            <TextBlock Height="200" Width="500" Text="{Binding name}"></TextBlock>
+        </StackPanel>
+    </Grid>
+</Page>
